@@ -23,6 +23,7 @@ public class CustomerValidator implements Validator {
 		ValidationUtils.rejectIfEmpty(errors, "password1", "customerBean.password1.empty");
 		ValidationUtils.rejectIfEmpty(errors, "email", "", "email欄不能空白");
        
+		
 		CustomerBean customer = (CustomerBean) target;
 //		String name = customer.getName();
 //		if (name == null || name.trim().length() == 0) {
